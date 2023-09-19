@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Currency_Converter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Currency convertor" Height="450" Width="800">
     <Grid>
-        
+        <GroupBox Header="Current exchange rate to ruble" Margin="10,0,414,0" BorderBrush="Black" FontWeight="Bold">
+            <ListBox>
+                <TextBlock FontWeight="bold">Current exchange rate for</TextBlock >
+                <ListBoxItem>USD</ListBoxItem>
+                <ListBoxItem>EUR</ListBoxItem>
+                <ListBoxItem>CAD</ListBoxItem>
+                <ListBoxItem>NOK</ListBoxItem>
+                <ListBoxItem>TRY</ListBoxItem>
+                <ListBoxItem>SEK</ListBoxItem>
+                <ListBoxItem>JPY</ListBoxItem>
+            </ListBox>
+        </GroupBox>
+        <GroupBox Header="Convert currencies" Margin="414,0,10,0" BorderBrush="Black"  FontWeight="Bold"/>
+        <ComboBox HorizontalAlignment="Left" Margin="426,44,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Select currency" HorizontalAlignment="Left" Margin="442,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.014,-0.22" Width="92"/>
+        <Label Content="Select exchange currency" HorizontalAlignment="Left" Margin="623,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.014,-0.22" Width="145"/>
+        <ComboBox HorizontalAlignment="Left" Margin="636,44,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="428,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="428,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="636,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter quantity" HorizontalAlignment="Left" Margin="440,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.014,-0.22" Width="92"/>
+        <Label Content="Quantity after exchange" HorizontalAlignment="Left" Margin="623,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.014,-0.22" Width="145"/>
+        <Button Content="Exchange" HorizontalAlignment="Left" Margin="518,145,0,0" VerticalAlignment="Top" Width="168"/>
+        <TextBlock x:Name="dateField" HorizontalAlignment="Left" Margin="211,23,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" Width="160" FontWeight="Bold"  />
+        <TextBlock HorizontalAlignment="Left" Margin="68,39,0,0" TextWrapping="Wrap" Text="U.S. dollar" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="68,60,0,0" TextWrapping="Wrap" Text="Euro" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="68,81,0,0" TextWrapping="Wrap" Text="Canadian dollar" VerticalAlignment="Top" Width="92" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="68,102,0,0" TextWrapping="Wrap" Text="Norwegian krone" VerticalAlignment="Top" Width="99" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="68,121,0,0" TextWrapping="Wrap" Text="Turkish lira" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="68,139,0,0" TextWrapping="Wrap" Text="Swedish krona" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="68,158,0,0" TextWrapping="Wrap" Text="Japanese yen" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="211,39,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="211,60,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="211,81,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="211,102,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="211,123,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="211,142,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="211,158,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
+
     </Grid>
 </Window>
