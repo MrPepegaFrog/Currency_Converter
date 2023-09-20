@@ -203,10 +203,11 @@ namespace Currency_Converter
             string select1 = SelectMenu2.Text;
             int count = 2;
             // свитч кейсом сделать выбор в первом меню относительно второго и получить результат 
+            decimal value = Convert.ToDecimal(QuntBox.Text);
             switch (select)
             {
                 case "RUB":
-                    decimal value  = Convert.ToDecimal(QuntBox.Text);
+                    
                     
                     switch (select1)
                     {
@@ -264,6 +265,10 @@ namespace Currency_Converter
         {
             ConvertOperation(); 
         }
+
+       
+
+        
     }
 }
 

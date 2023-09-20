@@ -63,7 +63,6 @@
         <TextBlock x:Name="TRYValue" HorizontalAlignment="Left" Margin="211,123,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
         <TextBlock x:Name="SEKValue" HorizontalAlignment="Left" Margin="211,142,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
         <TextBlock x:Name="JPYValue" HorizontalAlignment="Left" Margin="211,158,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
-        <Button Content="Refresh" HorizontalAlignment="Left" Margin="118,0,0,0" VerticalAlignment="Center" Width="124"/>
 
     </Grid>
 </Window>
