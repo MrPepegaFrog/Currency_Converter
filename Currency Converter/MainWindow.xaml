@@ -20,34 +20,34 @@
             </ListBox>
         </GroupBox>
         <GroupBox Header="Convert currencies" Margin="414,0,10,0" BorderBrush="Black"  FontWeight="Bold"/>
-        <ComboBox HorizontalAlignment="Left" Margin="426,44,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem>RUB</ComboBoxItem>
-            <ComboBoxItem>USD</ComboBoxItem>
-            <ComboBoxItem>EUR</ComboBoxItem>
-            <ComboBoxItem>CAD</ComboBoxItem>
-            <ComboBoxItem>NOK</ComboBoxItem>
-            <ComboBoxItem>TRY</ComboBoxItem>
-            <ComboBoxItem>SEK</ComboBoxItem>
-            <ComboBoxItem>JPY</ComboBoxItem>
+        <ComboBox x:Name="SelectMenu" HorizontalAlignment="Left" Margin="426,44,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Name="Torub">RUB</ComboBoxItem>
+            <ComboBoxItem Name="Tousd">USD</ComboBoxItem>
+            <ComboBoxItem Name="Toeur">EUR</ComboBoxItem>
+            <ComboBoxItem Name="Tocad">CAD</ComboBoxItem>
+            <ComboBoxItem Name="Tonok">NOK</ComboBoxItem>
+            <ComboBoxItem Name="Totry">TRY</ComboBoxItem>
+            <ComboBoxItem Name="Tosek">SEK</ComboBoxItem>
+            <ComboBoxItem Name="Tojpy">JPY</ComboBoxItem>
         </ComboBox>
         <Label Content="Select currency" HorizontalAlignment="Left" Margin="442,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.014,-0.22" Width="92"/>
         <Label Content="Select exchange currency" HorizontalAlignment="Left" Margin="623,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.014,-0.22" Width="145"/>
-        <ComboBox HorizontalAlignment="Left" Margin="636,44,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem>RUB</ComboBoxItem>
-            <ComboBoxItem>USD</ComboBoxItem>
-            <ComboBoxItem>EUR</ComboBoxItem>
-            <ComboBoxItem>CAD</ComboBoxItem>
-            <ComboBoxItem>NOK</ComboBoxItem>
-            <ComboBoxItem>TRY</ComboBoxItem>
-            <ComboBoxItem>SEK</ComboBoxItem>
-            <ComboBoxItem>JPY</ComboBoxItem>
+        <ComboBox x:Name="SelectMenu2" HorizontalAlignment="Left" Margin="636,44,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Name="OUTrub">RUB</ComboBoxItem>
+            <ComboBoxItem Name="OUTusd">USD</ComboBoxItem>
+            <ComboBoxItem Name="OUTeur">EUR</ComboBoxItem>
+            <ComboBoxItem Name="OUTcad">CAD</ComboBoxItem>
+            <ComboBoxItem Name="OUTnok">NOK</ComboBoxItem>
+            <ComboBoxItem Name="OUTtry">TRY</ComboBoxItem>
+            <ComboBoxItem Name="OUTsek">SEK</ComboBoxItem>
+            <ComboBoxItem Name="OUTjpy">JPY</ComboBoxItem>
         </ComboBox>
         
         <TextBox x:Name="QuntBox" HorizontalAlignment="Left" Margin="428,97,0,0" TextWrapping="Wrap" Text="enter quantity" VerticalAlignment="Top" Width="120" TextAlignment="Center" MouseDoubleClick="TextBox_MouseDoubleClick"/>
-        <TextBox HorizontalAlignment="Left" Margin="636,97,0,0" TextWrapping="Wrap" Text="result" VerticalAlignment="Top" Width="120" IsReadOnly="True" TextAlignment="Center"/>
+        <TextBox x:Name="ResultBox" HorizontalAlignment="Left" Margin="636,97,0,0" TextWrapping="Wrap" Text="result" VerticalAlignment="Top" Width="120" IsReadOnly="True" TextAlignment="Center"/>
         <Label Content="Enter quantity" HorizontalAlignment="Left" Margin="440,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.014,-0.22" Width="92"/>
         <Label Content="Quantity after exchange" HorizontalAlignment="Left" Margin="623,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.014,-0.22" Width="145"/>
-        <Button Content="Exchange" HorizontalAlignment="Left" Margin="518,145,0,0" VerticalAlignment="Top" Width="168"/>
+        <Button x:Name="ExchButton" Content="Exchange" HorizontalAlignment="Left" Margin="518,145,0,0" VerticalAlignment="Top" Width="168" Click="ExchClick"/>
         <TextBlock x:Name="dateField" HorizontalAlignment="Left" Margin="211,23,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" Width="160" FontWeight="Bold"  />
         <TextBlock HorizontalAlignment="Left" Margin="68,39,0,0" TextWrapping="Wrap" Text="U.S. dollar" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="68,60,0,0" TextWrapping="Wrap" Text="Euro" VerticalAlignment="Top" Width="85" FontWeight="Bold"/>

@@ -33,6 +33,7 @@ namespace Currency_Converter
             InitializeComponent();
             TimerTick();
             GetInformation();
+          
         }
         
          private void TimerTick()
@@ -193,6 +194,75 @@ namespace Currency_Converter
         private void TextBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             QuntBox.Text = string.Empty;
+        }
+
+        private void ConvertOperation() 
+        {
+            int EntQuntity = Convert.ToInt32(QuntBox.Text);
+            string select = SelectMenu.Text;
+            string select1 = SelectMenu2.Text;
+            int count = 2;
+            // свитч кейсом сделать выбор в первом меню относительно второго и получить результат 
+            switch (select)
+            {
+                case "RUB":
+                    decimal value  = Convert.ToDecimal(QuntBox.Text);
+                    
+                    switch (select1)
+                    {
+                        case "USD":
+                            
+                            decimal usd = Convert.ToDecimal(USDvalue.Text);
+                            decimal USDresult_operation = value / usd;
+                            decimal USDresult = decimal.Round(USDresult_operation, count, MidpointRounding.ToEven);
+                            ResultBox.Text = Convert.ToString(USDresult);
+                            break;
+                        case "EUR":
+                            decimal eur = Convert.ToDecimal(EURValue.Text);
+                            decimal EURresult_operation = value / eur;
+                            decimal EURresult = decimal.Round(EURresult_operation, count, MidpointRounding.ToEven);
+                            ResultBox.Text = Convert.ToString(EURresult);
+                            break;
+                        case "CAD":
+                            decimal cad = Convert.ToDecimal(CADValue.Text);
+                            decimal CADresult_operation = value / cad;
+                            decimal CADresult = decimal.Round(CADresult_operation, count, MidpointRounding.ToEven);
+                            ResultBox.Text = Convert.ToString(CADresult);
+                            break;
+                        case "NOK":
+                            decimal nok = Convert.ToDecimal(NOKvalue.Text);
+                            decimal NOKresult_operation = value / nok;
+                            decimal NOKresult = decimal.Round(NOKresult_operation, count, MidpointRounding.ToEven);
+                            ResultBox.Text = Convert.ToString(NOKresult);
+                            break;
+                        case "TRY":
+                            decimal TRY = Convert.ToDecimal(TRYValue.Text);
+                            decimal TRYresult_operation = value / TRY;
+                            decimal TRyresult = decimal.Round(TRYresult_operation, count, MidpointRounding.ToEven);
+                            ResultBox.Text = Convert.ToString(TRyresult);
+                            break;
+                        case "SEK":
+                            decimal sek = Convert.ToDecimal(SEKValue.Text);
+                            decimal SEKresult_operation = value / sek;
+                            decimal SEKresult = decimal.Round(SEKresult_operation, count, MidpointRounding.ToEven);
+                            ResultBox.Text = Convert.ToString(SEKresult);
+                            break;
+                        case "JPY":
+                            decimal jpy = Convert.ToDecimal(JPYValue.Text);
+                            decimal JPYresult_operation = value / jpy;
+                            decimal JPYresult = decimal.Round(JPYresult_operation, count, MidpointRounding.ToEven);
+                            ResultBox.Text = Convert.ToString(JPYresult);
+                            break;
+                        
+                    }
+                    break;
+            }
+           
+        }
+
+        private void ExchClick(object sender, RoutedEventArgs e)
+        {
+            ConvertOperation(); 
         }
     }
 }
