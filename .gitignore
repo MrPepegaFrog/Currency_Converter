@@ -1,1 +1,1 @@
-git rm -r --cached ".vs"
+git rm --cached ".vs"
